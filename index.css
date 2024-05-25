@@ -1,14 +1,58 @@
 .card {
-    background-color: bisque;
+    background-color: #F5F5DC; /* Beige */
 }
 
 .card-header {
-    background-color: black;
+    background-color: #8B4513; /* Saddle Brown */
     color: white;
     text-align: center;
 }
+
 p {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    color: #8B4513; /* Saddle Brown */
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #DEB887; /* Burly Wood */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #8B4513; /* Saddle Brown */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #5C4033; /* Dark Brown */
+    text-decoration: none;
+    cursor: pointer;
 }
